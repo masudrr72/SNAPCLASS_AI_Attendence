@@ -1,0 +1,10 @@
+1. create env: 
+ -conda create --name env_name python=3.10
+ -conda activate snapc
+
+2. install utilities:
+ - create requirements.txt file
+ - in terminal : pip install -r requirements.txt
+ -for dlib download dlib.whl file from git
+ - include in requirements for facereco : git+https://github.com/ageitgey/face_recognition_models
+   and setuptools<70.0.0 for help

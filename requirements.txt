@@ -1,0 +1,16 @@
+#utilities
+numpy
+pandas
+scikit-learn
+
+git+https://github.com/ageitgey/face_recognition_models
+setuptools
+
+bcrypt #hash data, imrprove security
+
+segno # for qr code
+pillow # image preprocessing
+
+streamlit
+
+supabase==2.31.0 # as database
