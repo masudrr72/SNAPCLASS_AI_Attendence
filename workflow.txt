@@ -8,3 +8,4 @@
  -for dlib download dlib.whl file from git
  - include in requirements for facereco : git+https://github.com/ageitgey/face_recognition_models
    and setuptools<70.0.0 for help
+3. connect with git
