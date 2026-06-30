@@ -9,3 +9,7 @@
  - include in requirements for facereco : git+https://github.com/ageitgey/face_recognition_models
    and setuptools<70.0.0 for help
 3. connect with git
+
+4. streamlit:
+ -create basic streamlit code with 3 screen
+ - create screen.py for home, student, teacher
