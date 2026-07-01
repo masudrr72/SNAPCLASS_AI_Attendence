@@ -1,10 +1,14 @@
 import streamlit as st
 from src.components.header import header_home
+from src.ui.base_layout import style_backgroung_home, style_backgroung_dashboard, style_base_layout
 
 def home_screen():
-    st.header('Home Screen')
-
+    
     header_home()
+
+    style_backgroung_home()
+    style_base_layout()
+
 
     col1, col2 = st.columns(2)
 
@@ -14,6 +18,6 @@ def home_screen():
             st.rerun()
     
     with col2:
-        if st.button('Student POrtal'):
+        if st.button('Student Portal'):
             st.session_state['login_type'] = 'student'
             st.rerun()
