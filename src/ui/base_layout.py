@@ -6,8 +6,15 @@ def style_backgroung_home():
         <style>
                .stApp{
                     background: #5865F2 !important;
-                } 
-            
+                }
+
+                .stApp div[data-testid="stColumn"]{
+                    background-color:#E0E3FF !important;
+                    padding:1rem !important;
+                    border-radius:2.5rem !important;
+                }
+
+
         </style>
 
                 """, 
@@ -19,9 +26,14 @@ def style_backgroung_dashboard():
 
     st.markdown("""
         <style>
+                    
+
+
+
                .stApp{
                     background: #E0E3FF !important;
                 } 
+
             
         </style>
 
@@ -50,23 +62,32 @@ def style_base_layout():
 
                 h1{
                     font-family: 'Climate Crisis', sans-serif !important;
-                    font-size = 3.35rem !important;
+                    font-size:3.3rem !important;
                     line-height:1.1 !important;
-                    margin-bottom:0rem !important;
+                    margin:0 !important;
+                    padding:2px !important;
                     color:#E0E3FF !important;
                 }
 
                 h2{
                     font-family: 'Climate Crisis', sans-serif !important;
-                    font-size = 3.35rem !important;
+                    font-size:2rem !important;
                     line-height:1.1 !important;
                     margin-bottom:0rem !important;
-                    color:#E0E3FF !important;
+                    color:black !important;
                 }
 
-                h3, h4,p{
+                h3,p{
                     font-family: 'outfit', sans-serif !important;
                     font-size: 
+                }
+
+                h4{
+                    font-family: 'outfit', sans-serif !important;
+                    font-size: 1.2rem !important;
+                    margin-bottom:-25px !important;
+                    padding:2px !important;
+                    color:white !important;
                 }
 
                 button{

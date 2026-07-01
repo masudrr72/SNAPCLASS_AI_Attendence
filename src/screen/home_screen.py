@@ -1,11 +1,12 @@
 import streamlit as st
-from src.components.header import header_home
+from src.components.header import header_home, subheader_home
 from src.ui.base_layout import style_backgroung_home, style_backgroung_dashboard, style_base_layout
+from src.components.column import column_teacher, column_student
 
 def home_screen():
     
     header_home()
-
+    subheader_home()
     style_backgroung_home()
     style_base_layout()
 
@@ -13,11 +14,16 @@ def home_screen():
     col1, col2 = st.columns(2)
 
     with col1:
-        if st.button('Teacher Portal'):
+        column_student()
+
+        if st.button('Student Portal', type='primary'):
+            st.session_state['login_type'] = 'student'
+            st.rerun()
+ 
+
+    with col2:
+        column_teacher()
+        if st.button('Teacher Portal', type='primary'):
             st.session_state['login_type'] = 'teacher'
             st.rerun()
     
-    with col2:
-        if st.button('Student Portal'):
-            st.session_state['login_type'] = 'student'
-            st.rerun()
