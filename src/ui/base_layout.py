@@ -26,9 +26,6 @@ def style_backgroung_dashboard():
 
     st.markdown("""
         <style>
-                    
-
-
 
                .stApp{
                     background: #E0E3FF !important;
@@ -74,12 +71,12 @@ def style_base_layout():
                     font-size:2rem !important;
                     line-height:1.1 !important;
                     margin-bottom:0rem !important;
-                    color:black !important;
+                    
                 }
 
                 h3,p{
                     font-family: 'outfit', sans-serif !important;
-                    font-size: 
+                    font-size:1.3rem !important; 
                 }
 
                 h4{
@@ -119,6 +116,17 @@ def style_base_layout():
 
                 button:hover{
                     transform: scale(1.05)
+                }
+
+                input::placeholder {
+                    font-size: 20px; 
+                    color: grey;
+                }
+
+                input {
+                    height: 40px !important;  
+                    font-size: 18px !important;
+                    padding:10px !important;
                 }
 
  

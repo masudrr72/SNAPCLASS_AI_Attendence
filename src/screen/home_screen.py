@@ -17,14 +17,14 @@ def home_screen():
     with col1:
         column_student()
 
-        if st.button('Student Portal', type='primary'):
+        if st.button('Student Portal', type='primary', icon=':material/arrow_outward:', icon_position='right'):
             st.session_state['login_type'] = 'student'
             st.rerun()
  
 
     with col2:
         column_teacher()
-        if st.button('Teacher Portal', type='primary'):
+        if st.button('Teacher Portal', type='primary', icon=':material/arrow_outward:',icon_position='right'):
             st.session_state['login_type'] = 'teacher'
             st.rerun()
 
