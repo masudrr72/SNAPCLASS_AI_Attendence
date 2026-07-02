@@ -28,17 +28,6 @@ def home_screen():
             st.session_state['login_type'] = 'teacher'
             st.rerun()
 
-    st.markdown(f"""
-                
-            <p>{"─"*62}</p>
-            
-                """, unsafe_allow_html=True)
 
     footer_home()
 
-    st.markdown(f"""
-            
-        <p>{"─"*62}</p>
-        
-            """, unsafe_allow_html=True)
-    

@@ -13,3 +13,14 @@
 4. streamlit:
  -create basic streamlit code with 3 screen
  - create screen.py for home, student, teacher
+
+
+
+
+
+
+
+
+
+
+python -m streamlit run app.py
