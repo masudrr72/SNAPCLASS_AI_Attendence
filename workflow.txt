@@ -13,6 +13,15 @@
 4. streamlit:
  -create basic streamlit code with 3 screen
  - create screen.py for home, student, teacher
+ - create teacher,login, profile screen
+ - interconnect button
+
+5. Create Databse in Superbase:
+ - create acount and project
+ - crreate tables required
+
+6. security:
+ - create root/streamlit/secrets.toml
 
 
 
