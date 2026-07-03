@@ -7,8 +7,8 @@ def teacher_body():
     
     teacher_username = st.text_input("Enter username", placeholder='@mehnoor')
     teacher_name = st.text_input("Enter name", placeholder='Mehnoor Rahman')
-    teacher_password = st.text_input("Enter password", placeholder="Enter your password")
-    teacher_password_confirm = st.text_input("Confirm password", placeholder = "Confirm your password")
+    teacher_pass = st.text_input("Enter password", placeholder="Enter your password")
+    teacher_pass_confirm = st.text_input("Confirm password", placeholder = "Confirm your password")
 
 
 def teacher_login_body():
@@ -16,4 +16,4 @@ def teacher_login_body():
     st.space()
     
     teacher_username = st.text_input("Enter username", placeholder='@mehnoor')
-    teacher_password = st.text_input("Enter password", placeholder="Enter your password")
+    teacher_pass = st.text_input("Enter password", placeholder="Enter your password")

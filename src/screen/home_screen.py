@@ -7,7 +7,7 @@ from src.components.footer import footer_home
 def home_screen():
     
     header_home()
-    #subheader_home()
+    # subheader_home()
     style_backgroung_home()
     style_base_layout()
 

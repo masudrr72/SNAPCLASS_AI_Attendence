@@ -13,13 +13,13 @@ def teacher_screen():
     col1,col2 = st.columns(2, gap='small')
 
     with col1:
-        if st.button("Register Now", type='primary', shortcut='Shift+Enter', width='stretch'):
+        if st.button("Register Now", type='primary', shortcut='Shift+Enter', width='stretch', icon=':material/passkey:'):
              st.session_state['login_type'] = 'teacher_profile'
              st.rerun()
 
 
     with col2:
-        if st.button("Login Instead", type='secondary', width='stretch'):
+        if st.button("Login Instead", type='secondary', width='stretch', icon=':material/passkey:'):
              st.session_state['login_type'] = 'teacher_login'
              st.rerun
 
