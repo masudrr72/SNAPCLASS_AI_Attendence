@@ -58,7 +58,32 @@ def subhead_taecher_profile():
     
 
 
+def header_student():
+    style_backgroung_dashboard()
+    style_base_layout()
 
+    col1,col2 = st.columns(2, vertical_alignment='center', gap='xlarge')
+
+    with col1:
+
+        logo_url = "https://i.ibb.co.com/G3rq37Jn/AUTOMATED-4.png"
+        st.markdown(f"""
+            <div style='display:flex; align-items:center; justify-content:center; gap:10px; margin-top:10px;'>
+                <img src='{logo_url}' style='height:100px;' />
+                <h2 style = 'color:#5865F2;'>SNAP<br/>CLASS</h2>
+            </div>      
+                    """, unsafe_allow_html=True)
+    with col2:
+        if st.button("Go back to home", type='secondary', key='homebackbtn', shortcut="control+backspace"):
+            st.session_state['login_type'] = None
+
+
+def subheader_student():
+    st.markdown(f"""
+    <div style='display:flex; align-items:center; justify-content:center; gap:10px; margin:30px;'>
+        <h2 style = 'color:black;'>Login with FaceID</h2>
+    </div>      
+            """, unsafe_allow_html=True)
 
 
 

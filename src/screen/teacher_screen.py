@@ -1,7 +1,7 @@
 import streamlit as st
 from src.components.header import header_teacher, subhead_teacher
 from src.components.body import teacher_body
-from src.components.footer import footer_teacher
+from src.components.footer import footer_dashboard
 from src.database.db import check_teacher_exists, create_teacher
 
 
@@ -41,7 +41,7 @@ def teacher_screen():
                 st.success(message)
                 import time 
                 time.sleep(2)
-                st.session_state['login_type'] = 'teacher_profile'
+                st.session_state['login_type'] = 'teacher_login'
                 st.rerun()
             else:
                 st.error(message)
@@ -56,4 +56,4 @@ def teacher_screen():
              st.rerun
 
 
-    footer_teacher()
+    footer_dashboard()

@@ -1,7 +1,7 @@
 import streamlit as st
 from src.components.header import header_teacher, subhead_taecher_login
 from src.components.body import teacher_login_body
-from src.components.footer import footer_teacher
+from src.components.footer import footer_dashboard
 from src.database.db import teacher_login
 
 def teacher_login_screen():
@@ -31,4 +31,4 @@ def teacher_login_screen():
             st.rerun
 
 
-    footer_teacher()
+    footer_dashboard()

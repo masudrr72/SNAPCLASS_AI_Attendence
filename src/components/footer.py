@@ -10,7 +10,7 @@ def footer_home():
                 """, unsafe_allow_html=True)
     
 
-def footer_teacher():
+def footer_dashboard():
     st.markdown(f"""
         <div style='margin:4rem; display:flex; gap:6px; justify-content:center; item-align:center'>
         
