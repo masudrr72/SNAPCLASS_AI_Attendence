@@ -44,7 +44,7 @@ def subhead_teacher():
 def subhead_taecher_login():
     st.markdown(f"""
     <div style='display:flex; align-items:center; justify-content:center; gap:10px; margin-top:0px;'>
-        <h2 style = 'color:black;'>Register your teacher profile</h2>
+        <h2 style = 'color:black;'>Login your teacher profile</h2>
     </div>      
             """, unsafe_allow_html=True)
     
